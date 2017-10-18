@@ -1,9 +1,14 @@
 # Campaigns Resources
 
-    GET campaigns
+    POST campaigns/{campaignId}/deactivate
 
 ## Description
-Returns a list of campaigns in the account.
+Deactivate a single campaign by a given ID.
+
+***
+
+## Parameters
+- **campaignId** _(required)_ — The ID of the campaign.
 
 ***
 
@@ -20,7 +25,7 @@ None
 ## Example
 **Request**
 
-    https://112823f5-6f6e-4e89-848d-966ba4479185.mock.pstmn.io/campaigns
+    https://112823f5-6f6e-4e89-848d-966ba4479185.mock.pstmn.io/campaigns/1234/deactivate
 
 **Return** __shortened for example purpose__
 ``` json

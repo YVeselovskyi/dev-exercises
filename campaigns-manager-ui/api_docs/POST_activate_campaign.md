@@ -1,4 +1,4 @@
-# Photo Resources
+# Campaigns Resources
 
     POST campaigns/{campaignId}/activate
 
