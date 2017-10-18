@@ -1,14 +1,14 @@
 # Campaigns Resources
 
-    GET campaigns
+    GET campaigns/{campaignId}/stats
 
 ## Description
-Returns a list of campaigns in the account.
+Returns a list of stats by a given campaign ID.
 
 ***
 
 ## Return format
-An array of campaigns.
+An array of stats.
 
 ***
 
@@ -20,37 +20,25 @@ None
 ## Example
 **Request**
 
-    https://112823f5-6f6e-4e89-848d-966ba4479185.mock.pstmn.io/campaigns
+    https://5cd3f999-f49f-4e42-8b8b-173c7185f093.mock.pstmn.io/campaigns/fc23c87a-fb0d-4315-aa2b-854f68e88f6a/stats
 
 **Return** __shortened for example purpose__
 ``` json
 [{
-	"id": "campaign_mEzxAQF3XbdhSzj39hnytPHhg6mbc",
-	"name": "My first campaign",
-	"total_budget": 1000,
-	"daily_budget": 100,
-	"budget_daily_left": 100,
-	"views": 150,
-	"clicks_today": 0,
-	"clicks_yesterday": 0,
-	"clicks": 8,
-	"views_yesterday": 0,
-	"status": "INACTIVE",
-	"spending": 264600,
-	"spending_today": 0
+	"date": "2017-10-18",
+	"impressions": 66010,
+	"clicks": 607
 }, {
-	"id": "campaign_oUJ7jIimwxtfEXr3cC7KeeaIxiNAkD",
-	"name": "Just a test campaign",
-	"total_budget": 1000,
-	"daily_budget": 10,
-	"budget_daily_left": 10,
-	"views": 1046,
-	"clicks_today": 0,
-	"clicks_yesterday": 0,
-	"clicks": 2,
-	"views_yesterday": 0,
-	"status": "ACTIVE",
-	"spending": 1020319,
-	"spending_today": 0
+	"date": "2017-10-17",
+	"impressions": 949396,
+	"clicks": 152
+}, {
+	"date": "2017-10-16",
+	"impressions": 172071,
+	"clicks": 110
+}, {
+	"date": "2017-10-15",
+	"impressions": 341037,
+	"clicks": 665
 }]
 ```
