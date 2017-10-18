@@ -10,6 +10,8 @@ Create a small SPA (Single-page application) containing two screens:
 
 ### Main screen: Camapigns list
 
+![Loading...](./stats-screen-example.png)
+
 This screen contains a list of campaigns (represents in a table) within the account, provided by the API.
 
 Each row in the table, which represents a single campaign, should contain a few columns with data and two actions to perform on the campaign.
@@ -35,6 +37,8 @@ The campaign's action dropdown should contain the following buttons:
 | Stats | This button open a new screen which display the campaign’s stats. |
 
 ### Second screen: Campaign Stats
+
+![Loading...](./campaigns-list-screen-example.png)
 
 This screen contains a chart which represents the performance of a given campaign during a period of time, grouped by dates and an option to switch between different campaigns.
 
