@@ -11,9 +11,9 @@ We need a process which will automatically improve the configuration of our camp
  * Get a list of campaigns from the NUVIAD API
     * For each campaign, perform the following:
         * Get campaign stats from the NUVIAD API
-        * Analyze stats rows and decide wether to update the campaign's max bid by calculating the ratio between `opportunities` and `impressions` (`impressions`/`opportunities`):
-            * If the result is less than 0.05, than increase `max_bid` value of the campaign and perform the following:
-                * Update NUVIAD API with the new `bid` value (see **[<code>PUT</code> update campaign bid](../api_docs/PUT_update_campaign_bid.md)**)
+        * Analyze stats rows and decide whether to update the campaign's "max bid" (which represents the max amount the advertiser is willing to pay in order to advertise in a certain app) by calculating the ratio between `opportunities` and `impressions` (`impressions`/`opportunities`):
+            * If the result is less than 0.5, than increase `max_bid` value of the related row and perform the following:
+                * Update NUVIAD API with the new `bid` value for the realted `app_id` (see **[<code>PUT</code> update campaign bid](../api_docs/PUT_update_campaign_bid.md)**)
                 * Create a new log record in the provided MySQL DB. see our log schema
 
 **Create API endpoint for getting a list of logs:**
@@ -31,7 +31,7 @@ Use the following schema to update MySQL for each new log record:
 | Column      | Description                                                                                |
 |-------------|--------------------------------------------------------------------------------------------|
 | campaign_id | The ID of the related campaign.                                                            |
-| hour        | The related hour number taken from the campaign's stats.                                   |
+| app_id      | The related `app_id` taken from the campaign's stats.                                      |
 | old_bid     | The campaign's bid for the related hour before making the update.                          |
 | new_bid     | The new campaign's bid for the related hour.                                               |
 | ratio       | The ratio between `opportunities` and `impressions` which tells the reason for the update. |
@@ -42,7 +42,7 @@ Use the following schema to update MySQL for each new log record:
  * Use the provided API endpoints described in [API Endpoints](#api-endpoints).
  * Implement the solution using NodeJS.
  * Keep the code clean and reviewable.
- * When you're done, upload it somewhere where it can be viewable by the world.
+ * When you're done, upload your solution to Github and share it with us.
  * Have fun!
 
 ## Resources

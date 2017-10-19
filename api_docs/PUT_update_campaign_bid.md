@@ -7,6 +7,17 @@ Update campaign bid.
 
 ***
 
+## Path Parameters
+- **campaignId** _(required)_ — The ID of the campaign.
+
+***
+
+## Body Parameters
+- **app_id** _(required)_ — Related app ID.
+- **bid** _(required)_ — New bid.
+
+***
+
 ## Return format
 Object contains the result of the process.
 

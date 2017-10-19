@@ -60,7 +60,7 @@ The body of the screen should contains a chart which dislay the stats of the cam
  * Use the provided API endpoints described in [API Endpoints](#api-endpoints).
  * Choose between one of the following solutions: AngularJS or ReactJS.
  * Keep the code clean and reviewable.
- * When you're done, upload it somewhere where it can be viewable by the world.
+ * When you're done, upload your solution to Github and share it with us.
  * Have fun!
 
 ## Resources
