@@ -8,9 +8,9 @@ We need a process which will automatically improve the configuration of our camp
 
 **Create the following process:**
 
- * Get a list of campaigns from the NUVIAD API
+ * Get a list of campaigns from the NUVIAD API (see **[<code>GET</code> campaigns](../api_docs/GET_campaigns.md)**)
     * For each campaign, perform the following:
-        * Get campaign stats from the NUVIAD API
+        * Get campaign stats from the NUVIAD API (see **[<code>GET</code> campaign stats by apps](../api_docs/GET_campaign_stats_by_apps.md)**)
         * Analyze stats rows and decide whether to update the campaign's "max bid" (which represents the max amount the advertiser is willing to pay in order to advertise in a certain app) by calculating the ratio between `opportunities` and `impressions` (`impressions`/`opportunities`):
             * If the result is less than 0.5, than increase `max_bid` value of the related row and perform the following:
                 * Update NUVIAD API with the new `bid` value for the realted `app_id` (see **[<code>PUT</code> update campaign bid](../api_docs/PUT_update_campaign_bid.md)**)
