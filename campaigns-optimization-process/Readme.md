@@ -13,7 +13,7 @@ We need a process which will automatically improve the configuration of our camp
         * Get campaign stats from the NUVIAD API
         * Analyze stats rows and decide wether to update the campaign's max bid by calculating the ratio between `opportunities` and `impressions` (`impressions`/`opportunities`):
             * If the result is less than 0.05, than increase `max_bid` value of the campaign and perform the following:
-                * Update NUVIAD API with the new `bid` value (see **[<code>PUT</code> update campaign bid](api_docs/PUT_update_campaign_bid.md)**)
+                * Update NUVIAD API with the new `bid` value (see **[<code>PUT</code> update campaign bid](../api_docs/PUT_update_campaign_bid.md)**)
                 * Create a new log record in the provided MySQL DB. see our log schema
 
 **Create API endpoint for getting a list of logs:**
@@ -49,6 +49,6 @@ Use the following schema to update MySQL for each new log record:
 
 ### API Endpoints
 
-- **[<code>GET</code> campaigns](api_docs/GET_campaigns.md)**
-- **[<code>PUT</code> update campaign bid](api_docs/PUT_update_campaign_bid.md)**
-- **[<code>GET</code> campaign stats by apps](api_docs/GET_campaign_stats_by_apps.md)**
+- **[<code>GET</code> campaigns](../api_docs/GET_campaigns.md)**
+- **[<code>PUT</code> update campaign bid](../api_docs/PUT_update_campaign_bid.md)**
+- **[<code>GET</code> campaign stats by apps](../api_docs/GET_campaign_stats_by_apps.md)**
