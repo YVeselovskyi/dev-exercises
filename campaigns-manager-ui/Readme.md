@@ -32,8 +32,8 @@ The campaign's action dropdown should contain the following buttons:
 
 | Label | Description |
 | ----- | ----------- |
-| Activate | This button should be displayed in case the `status` of the campaign is “INACTIVE". by clicking on this button, it should send HTTP call to **[<code>POST</code> activate campaign](api_docs/POST_activate_campaign.md)**.  |
-| Deactivate | This button should be displayed in case the `status` of the campaign is “ACTIVE". by clicking on this button, it should send HTTP call to **[<code>POST</code> deactivate campaign](api_docs/POST_deactivate_campaign.md)**.  |
+| Activate | This button should be displayed in case the `status` of the campaign is “INACTIVE". by clicking on this button, it should send HTTP call to **[<code>POST</code> activate campaign](../api_docs/POST_activate_campaign.md)**.  |
+| Deactivate | This button should be displayed in case the `status` of the campaign is “ACTIVE". by clicking on this button, it should send HTTP call to **[<code>POST</code> deactivate campaign](../api_docs/POST_deactivate_campaign.md)**.  |
 | Stats | This button open a new screen which display the campaign’s stats. |
 
 ### Second screen: Campaign Stats
@@ -52,7 +52,7 @@ The header of this screen should contain the following:
 
 **Body:**
 
-The body of the screen should contains a chart which dislay the stats of the campaign provided by the API. see **[<code>GET</code> campaign stats](api_docs/GET_campaign_stats.md)**.
+The body of the screen should contains a chart which dislay the stats of the campaign provided by the API. see **[<code>GET</code> campaign stats](../api_docs/GET_campaign_stats.md)**.
 
 ## Your mission
 
@@ -67,7 +67,7 @@ The body of the screen should contains a chart which dislay the stats of the cam
 
 ### API Endpoints
 
-- **[<code>GET</code> campaigns](api_docs/GET_campaigns.md)**
-- **[<code>POST</code> activate campaign](api_docs/POST_activate_campaign.md)**
-- **[<code>POST</code> deactivate campaign](api_docs/POST_deactivate_campaign.md)**
-- **[<code>GET</code> campaign stats](api_docs/GET_campaign_stats.md)**
+- **[<code>GET</code> campaigns](../api_docs/GET_campaigns.md)**
+- **[<code>POST</code> activate campaign](../api_docs/POST_activate_campaign.md)**
+- **[<code>POST</code> deactivate campaign](../api_docs/POST_deactivate_campaign.md)**
+- **[<code>GET</code> campaign stats](../api_docs/GET_campaign_stats.md)**
